@@ -21,6 +21,11 @@ const GuestList: React.FC = () => {
 				}}
 			/>
 			<button onClick={onClick}>Add guest</button>
+			<ul>
+				{guests.map((guest) => (
+					<li key={guest}>{guest}</li>
+				))}
+			</ul>
 		</div>
 	);
 };
