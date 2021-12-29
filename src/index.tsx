@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom";
 import { ChildAsFC } from "./props/Child";
+import GuestList from "./state/GuestList";
 
 const App = () => {
 	return (
 		<div>
-			<h1>Hi there!</h1>
-			<ChildAsFC color="white" onClick={() => console.log("click")} />
+			<GuestList />
 		</div>
 	);
 };
